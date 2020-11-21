@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:focusableInTouchMode="true"
+    tools:context=".Communication.aHomePage">
+
+
+    <RelativeLayout
+        android:id="@+id/up"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        >
+        <ImageButton
+            android:id="@+id/btn_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+
+            />
+        <TextView
+            android:id="@+id/btn_app"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="CLUB"
+            android:textSize="23sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="120dp"
+            android:textColor="@color/black"
+
+            />
+        <ImageButton
+            android:id="@+id/btn_pop1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/sorting"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+
+
+            />
+    </RelativeLayout>
+
+
+
+
+
+    //end
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/end"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@color/white"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        >-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_button1"-->
+<!--            android:layout_width="50dp"-->
+
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@drawable/caidan"-->
+<!--            android:layout_margin="10dp"-->
+
+
+<!--            />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_button2"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@drawable/caidan"-->
+<!--            android:layout_margin="10dp"-->
+
+
+<!--            />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_button3"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@drawable/caidan"-->
+<!--            android:layout_margin="10dp"-->
+
+
+<!--            />-->
+<!--    </LinearLayout>-->
+
+//end
+
+
+    <RadioGroup
+        android:id="@+id/radio_group_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        >
+        <RadioButton
+            android:id="@+id/radio_button_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:button="@null"
+            android:background="@drawable/radio1"
+
+
+        />
+        <RadioButton
+            android:id="@+id/radio_button_discovery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+
+            android:button="@null"
+
+            android:background="@drawable/radio2"
+            />
+        <RadioButton
+            android:id="@+id/radio_button_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:button="@null"
+            android:background="@drawable/radio3"
+            />
+        <RadioButton
+            android:id="@+id/radio_button_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:button="@null"
+            android:background="@drawable/radio4"
+            />
+    </RadioGroup>
+
+
+
+    //content
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/up"
+        android:layout_above="@+id/radio_group_button"
+        >
+        <LinearLayout
+            android:id="@+id/mLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            //search line
+            <SearchView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:iconifiedByDefault="false"
+
+
+                android:background="@color/white"
+                android:queryHint="input search content"
+
+                />
+
+
+            //advertise
+            <HorizontalScrollView
+                android:id="@+id/hscroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/hlinear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageButton
+                        android:id="@+id/htv"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/yoga"
+                        android:layout_margin="50dp"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/btn2"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="50dp"
+                        android:background="@drawable/sport" />
+
+                    <ImageButton
+                        android:id="@+id/btn3"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/food"
+                        android:layout_margin="50dp"
+                        />
+                    <ImageButton
+                        android:id="@+id/btn4"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/dance"
+                        android:layout_margin="50dp"
+                        />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            //detail content
+
+
+            <ListView
+                android:id="@+id/hh"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp" />
+            <!--<View-->
+<!--    android:id="@+id/list_item"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/imgtou"-->
+<!--                android:layout_width="64dp"-->
+<!--                android:layout_height="64dp"-->
+<!--                android:baselineAlignBottom="true"-->
+<!--                android:paddingLeft="8dp" />-->
+
+<!--            &lt;!&ndash; 定义一个竖直方向的LinearLayout,把QQ呢称与说说的文本框设置出来 &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/name"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingLeft="8dp"-->
+<!--                    android:textColor="#1D1D1C"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/says"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingLeft="8px"-->
+<!--                    android:textColor="#B4B4B9"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--            </LinearLayout>-->
+<!--</View>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/club0"-->
+<!--                    android:layout_width="300dp"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:background="@drawable/food"-->
+<!--                    android:text="food club"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="30sp"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/club1"-->
+<!--                    android:layout_width="300dp"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_marginTop="90dp"-->
+<!--                    android:background="@drawable/student"-->
+<!--                    android:text="learning club"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="30sp"/>-->
+<!--                <TextView-->
+<!--                    android:id="@+id/club2"-->
+<!--                    android:layout_width="300dp"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_marginTop="90dp"-->
+<!--                    android:background="@drawable/yoga"-->
+<!--                    android:text="yoga club"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="30sp"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/club3"-->
+<!--                    android:layout_width="300dp"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_marginTop="90dp"-->
+<!--                    android:background="@drawable/dance"-->
+<!--                    android:text="dance club"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="30sp"/>-->
+<!--                <TextView-->
+<!--                    android:id="@+id/club4"-->
+<!--                    android:layout_width="300dp"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_marginTop="90dp"-->
+<!--                    android:background="@drawable/sport"-->
+<!--                    android:text="sport club"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="30sp"/>-->
+<!--                <TextView-->
+<!--                    android:id="@+id/club5"-->
+<!--                    android:layout_width="300dp"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_marginTop="90dp"-->
+<!--                    android:background="@drawable/music"-->
+<!--                    android:text="music club"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="30sp"/>-->
+            </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

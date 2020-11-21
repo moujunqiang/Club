@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:background="@drawable/radius_drawable_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/radius_post_bg">
+            <EditText
+            android:id="@+id/Activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:inputType="textPersonName"
+            android:text="Activity name" />
+
+            <EditText
+                android:id="@+id/Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@drawable/radius_post_bg">
+            <EditText
+                android:id="@+id/Description"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#00000000"
+                android:inputType="textPersonName"
+                android:hint="Description the activity..."
+                android:gravity="left"/>
+
+            <ImageButton
+                android:id="@+id/Upload_Image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@mipmap/pic" />
+
+         <!-- <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="371dp"
+                android:layout_height="54dp"
+                tools:srcCompat="@tools:sample/avatars" />-->
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@drawable/radius_post_bg">
+        <Spinner
+            android:id="@+id/Type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:background="#eeeeee" />
+
+
+
+        <EditText
+            android:id="@+id/Location"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:hint="Location"
+            android:background="@drawable/radius_post_bg"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:background="#eeeeee" />
+
+
+        <LinearLayout
+            android:id="@+id/input_club_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/radius_post_bg">
+
+            <Button
+                android:id="@+id/btn_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Time" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:id="@+id/input_club_mail_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/radius_post_bg">
+
+            <Button
+                android:id="@+id/btn_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/radius_post_bg">
+
+            <EditText
+                android:id="@+id/Capcaity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                android:inputType="textPersonName"
+                android:text=" Capcaity" />
+
+
+            <EditText
+                android:id="@+id/Capcaity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:ems="10"
+                android:inputType="number" />
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

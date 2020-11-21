@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/src/androidTest/java/lib/activation.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/src/androidTest/java/lib/activation.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

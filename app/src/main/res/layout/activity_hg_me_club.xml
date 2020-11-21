@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="#96ffcc44"
+    tools:context=".Communication.ClubAccount"
+    >
+
+
+    //up
+    <RelativeLayout
+        android:id="@+id/up"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:baselineAlignBottom="true"
+        >
+
+
+        <TextView
+            android:id="@+id/club_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XJTLU Student Union"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/club_username"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/btn_app"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="ME"
+            android:textSize="23sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="120dp"
+
+            />
+        <ImageButton
+            android:id="@+id/btn_pop1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/edit"
+            android:layout_marginLeft="5dp"/>
+
+
+
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:text="logout"
+            android:textColor="#FF6600"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            />
+    </RelativeLayout>
+
+    //end
+    <RadioGroup
+        android:id="@+id/radio_group_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+       android:baselineAligned="true"
+        >
+        <RadioButton
+            android:id="@+id/radio_button_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:button="@null"
+            android:background="@drawable/radio1"
+
+
+            />
+        <RadioButton
+            android:id="@+id/radio_button_discovery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+
+            android:button="@null"
+
+            android:background="@drawable/radio2"
+            />
+        <RadioButton
+            android:id="@+id/radio_button_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:button="@null"
+            android:background="@drawable/radio3"
+            />
+        <RadioButton
+            android:id="@+id/radio_button_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="50dp"
+            android:button="@null"
+            android:background="@drawable/radio4"
+            />
+    </RadioGroup>
+
+
+//content
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/up"
+        android:layout_above="@+id/radio_group_button"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/kk"
+            layout="@layout/input_hp_me_club_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp" />
+
+
+
+            <ListView
+                android:id="@+id/hhh"
+                android:layout_below="@+id/kk"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

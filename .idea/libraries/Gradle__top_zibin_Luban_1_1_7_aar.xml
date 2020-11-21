@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: top.zibin:Luban:1.1.7@aar">
+    <CLASSES>
+      <root url="file://D:/AndndroidGradle/caches/transforms-2/files-2.1/3af3dc7253a5ce117dfd6ed313296cf8/jetified-Luban-1.1.7/AndroidManifest.xml" />
+      <root url="jar://D:/AndndroidGradle/caches/transforms-2/files-2.1/3af3dc7253a5ce117dfd6ed313296cf8/jetified-Luban-1.1.7/jars/classes.jar!/" />
+      <root url="file://D:/AndndroidGradle/caches/transforms-2/files-2.1/3af3dc7253a5ce117dfd6ed313296cf8/jetified-Luban-1.1.7/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/AndndroidGradle/caches/modules-2/files-2.1/top.zibin/Luban/1.1.7/f2e1c2f65d3834091525353f97a66200cc866409/Luban-1.1.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/AndndroidGradle/caches/modules-2/files-2.1/top.zibin/Luban/1.1.7/6f2c4e74feed24d37812c4b7043b0bb0bb39e71/Luban-1.1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <drawable name="color_white">#ffffff</drawable>
+    <drawable name="color_green">#00adba</drawable>
+    <drawable name="color_gray">#f4f4f8</drawable>
+    <drawable name="color_black">#000000</drawable>
+
+    <color name="color">#848c94</color>
+    <color name="black">#000000</color>
+    <color name="blue">#339999</color>
+    <color name="pink">#FA8072</color>
+    <color name="white">#FFFFFF</color>
+    <color name="oo">#DCDCDC</color>
+
+</resources>

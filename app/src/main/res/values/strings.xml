@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Club</string>
+    <string name="logIn">LOG IN</string>
+    <string name="login_hint">User Name</string>
+    <string name="pwd_hint">Password</string>
+
+    <string name="register">SIGN UP</string>
+
+
+</resources>

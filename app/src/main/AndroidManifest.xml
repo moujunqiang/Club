@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.club">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="OCOC"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Communication.Noticification.register_user"></activity>
+        <activity android:name=".Communication.manageActivity" />
+        <activity android:name=".Communication.AdminAccount" />
+        <activity android:name=".Communication.ClubAccount" />
+        <activity android:name=".Communication.PostActivity" />
+        <activity android:name=".Communication.EditProfile" />
+        <activity android:name=".Communication.UserAccount" />
+        <activity android:name=".Communication.registerUser" />
+        <activity android:name=".Communication.registerClub" />
+        <activity android:name=".Communication.aHomePage" />
+        <activity android:name=".Communication.LogIn" />
+        <activity android:name=".Communication.activity" />
+        <activity android:name=".Communication.messageList" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 适配 Android 7.0 文件意图 -->
+        <provider
+            tools:replace="android:authorities"
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.club.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                tools:replace="android:resource"
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/flie_path" />
+        </provider>
+    </application>
+
+</manifest>

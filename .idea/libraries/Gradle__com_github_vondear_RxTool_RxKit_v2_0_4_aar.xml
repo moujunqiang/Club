@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.vondear.RxTool:RxKit:v2.0.4@aar">
+    <CLASSES>
+      <root url="file://D:/AndndroidGradle/caches/transforms-2/files-2.1/220692fa31cf03338f26cfe2ae9c6ea5/jetified-RxKit-v2.0.4/AndroidManifest.xml" />
+      <root url="jar://D:/AndndroidGradle/caches/transforms-2/files-2.1/220692fa31cf03338f26cfe2ae9c6ea5/jetified-RxKit-v2.0.4/jars/classes.jar!/" />
+      <root url="file://D:/AndndroidGradle/caches/transforms-2/files-2.1/220692fa31cf03338f26cfe2ae9c6ea5/jetified-RxKit-v2.0.4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/AndndroidGradle/caches/modules-2/files-2.1/com.github.vondear.RxTool/RxKit/v2.0.4/f93a370de3119a62a1235795c88ca939cb456ce2/RxKit-v2.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

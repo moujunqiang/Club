@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/background_gradient"
+    tools:context=".Communication.LogIn">
+
+    <ScrollView
+        android:id="@+id/id_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="0dp">
+
+        <include
+            layout="@layout/input_register_user_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/registerUser2"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="end"
+            android:padding="0dp"
+            android:layout_marginTop="20dp"
+            android:text="User "
+            android:textColor="@drawable/selector_bt_text"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="|"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+
+        <Button
+            android:id="@+id/registerClub2"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="start"
+            android:padding="0dp"
+            android:text=" club"
+            android:textColor="@drawable/selector_bt_text"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/club2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:text="USER"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/club2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Create Account For User"
+        android:textColor="#000000"
+        android:textSize="24sp" /> />
+
+    <ImageButton
+        android:id="@+id/ib_return"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/in_return"></ImageButton>
+
+
+
+
+
+    <TextView
+        android:id="@+id/register2"
+        android:layout_width="273dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="167dp"
+        android:background="@drawable/selector_text_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="15dip"
+        android:paddingTop="2dip"
+        android:paddingRight="15dip"
+        android:paddingBottom="2dip"
+        android:text="Reigster"
+        android:textColor="@animator/selector_text_press_color"
+        android:textSize="20sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
