@@ -147,13 +147,7 @@ public class UserAccount extends AppCompatActivity {
                         UserAccount.this.finish();
                     }
                 });
-                profile.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                       // UpdatePhoto();
-                        startActivity(new Intent(UserAccount.this,EditProfile.class));
-                    }
-                });
+
                 break;
         }
 
