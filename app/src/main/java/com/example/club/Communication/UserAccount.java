@@ -150,7 +150,8 @@ public class UserAccount extends AppCompatActivity {
                 profile.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        UpdatePhoto();
+                       // UpdatePhoto();
+                        startActivity(new Intent(UserAccount.this,EditProfile.class));
                     }
                 });
                 break;

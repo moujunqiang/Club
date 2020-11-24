@@ -8,7 +8,6 @@
     android:background="#bfFFCC66"
     tools:context=".Communication.UserAccount">
 
-    //up
     <LinearLayout
         android:id="@+id/up"
         android:layout_width="match_parent"
